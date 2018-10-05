@@ -20,3 +20,12 @@ fact n = product[1..n]
 
 norm :: Double -> Double -> Double
 norm x y = sqrt(x*x+y*y)
+
+threeDifferent :: Integer -> Integer -> Integer -> Bool
+threeDifferent a b c = (a /= b) && (b /= c) && (c /= a)
+
+phi :: Float
+phi = (1+(sqrt(5)))/2
+
+floorf :: Float -> Float
+floorf n = n - fromIntegral(floor n)
