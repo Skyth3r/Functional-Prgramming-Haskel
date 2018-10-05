@@ -1,4 +1,5 @@
-module FirstScript where 
+module FirstScript where
+import Data.Char
 
 size :: Integer
 size = 12+13
@@ -29,3 +30,9 @@ phi = (1+(sqrt(5)))/2
 
 floorf :: Float -> Float
 floorf n = n - fromIntegral(floor n)
+
+factorial :: Integer -> Integer
+factorial n = product [1..n]
+
+between :: Int -> Int -> Int -> Bool
+between x y z = ((x < y) && (y < z) || (z < y) && (y < x))

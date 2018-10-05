@@ -6,3 +6,4 @@
 * `:l filename` - loads script
 * `:r fimename` - reloads script
 * `:m + Data.Char` - Loads libaray module Data.Char
+* Integer is more accurate than Int
