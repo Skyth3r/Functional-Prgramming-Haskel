@@ -16,6 +16,10 @@ squaredouble n = square(double n)
 squaresquare :: Integer -> Integer
 squaresquare n = square(square n)
 
+-- dollar signs avoids paranthesis
+squaresquareAlt :: Integer -> Integer
+squaresquareAlt n = square $ square n
+
 fact :: Integer -> Integer
 fact n = product[1..n]
 
@@ -33,6 +37,11 @@ floorf n = n - fromIntegral(floor n)
 
 factorial :: Integer -> Integer
 factorial n = product [1..n]
+
+-- This function uses pattern matching
+factAlternate :: Integer -> Integer
+factAlternate 0 = 1
+factAlternate n | n > 0 = n * factAlternate (n-1)
 
 between :: Int -> Int -> Int -> Bool
 between x y z = ((x < y) && (y < z) || (z < y) && (y < x))
