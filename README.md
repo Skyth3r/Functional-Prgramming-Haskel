@@ -1,4 +1,4 @@
-# Functional-Prgramming-Haskel
+# Functional-Programming-Haskell
 
 ## Notes
 * Use ghci to run Haskel from Terminal
